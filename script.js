@@ -14,11 +14,7 @@ function SportsCar(make, model, topSpeed) {
     this.topSpeed = topSpeed;
 }
 
-// Set up the prototype chain
-SportsCar.prototype = Object.create(Car.prototype);
-
-// Set the constructor property for correct instanceof checks
-SportsCar.prototype.constructor = SportsCar;
+SportsCar.prototype.__proto__ = Car.prototype;
 
 // Do not change the code below
 window.Car = Car;
