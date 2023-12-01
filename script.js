@@ -14,6 +14,10 @@ function SportsCar(make, model, topSpeed) {
     this.topSpeed = topSpeed;
 }
 
+SportsCar.prototype.getTopSpeed = function(){
+	return topSpeed;
+}
+
 SportsCar.prototype.__proto__ = Car.prototype;
 
 // Do not change the code below
